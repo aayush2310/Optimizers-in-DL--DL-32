@@ -1,0 +1,11 @@
+We have to find the values of the 9 parameters such that when we send our data to the neural network then its output is closest to the original value.
+Neural network is an optimization problem to minimize the loss
+We take random values of weights and bias and improve upon them to get the optimum value.
+The optimizer used is gradient descent.
+What is the problem in these optimizers that we need new optimizers?
+=>1)To decide the correct value of learning rate.
+  2)soln.-learning rate scheduler-we predefine a scheduler which schedules the value of the learning rate-does not depend upon dataset-not good result on every dataset.
+  3)We need to find the minimum of 9 parameters-10D graph-learning rate is same for all directions-limitation
+  4)Local minima problem-stochastic GD has some potential as it goes zig-zag but others are not worthy
+  5)Saddle point problem-gradient at saddle point is 0 so weight update does not occur.
+  
